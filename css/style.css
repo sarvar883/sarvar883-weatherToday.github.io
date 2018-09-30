@@ -1,0 +1,34 @@
+/* .outline-red {
+  outline: 2px solid red; 
+} */
+.outline-blue {
+  outline: 2px solid blue; 
+}
+.change {
+  margin: auto;
+}
+.weather {
+  background-color: #4d94ff;
+  border-radius: 8px;
+  color: white;
+}
+/* h1,h2,h3,h4,p {
+  color: white;
+} */
+h4.black {
+  color: black;
+}
+@media(min-width: 768px) {
+  .weather {
+    padding: 0;
+  }
+}
+@media(max-width: 767px) {
+  .weather {
+    margin: 0 15px 15px 15px;
+  }
+  .change {
+    margin: 15px;
+    padding: 0; 
+  }
+}

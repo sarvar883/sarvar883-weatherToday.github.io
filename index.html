@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bootstrap v.4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Weather In Uzb</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-info mb-3 py-0 pt-2 pb-2">
+    <div class="container px-0">
+      <a href="#" class="navbar-brand">Weather in UZB</a>
+      <div>
+        <!-- <ul class="navbar-nav mr-auto">
+          <li class="nav-item outline">
+            <a href="#" class="nav-link">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container outline">
+    <h1>Welcome</h1>
+    <h3 class="text-center" id="city"></h3>
+    <div class="row">
+
+      <div class="col-md-6 weather text-center outline-red">
+        <h3 id="todayHeader"></h3>
+        <h4>
+          <span id="conditionTextToday"></span>
+          <img src="" id="conditionImgToday">
+        </h4>
+        <h4 id="temperatureToday"></h4>
+        <h4 id="humidityToday"></h4>
+        <h4 id="windToday"></h4>
+      </div>
+
+      <div class="col-md-6 text-center change outline-blue">
+        <h4 class="black">To Change Location press the button below</h4>
+        <button type="button" id="changeLocation" class="btn btn-success btn-block" data-toggle="modal" data-target="#locModal">Change Location</button>
+        <!-- <h3 id="tomorrowHeader"></h3>
+        <p>
+          <span id="conditionTextTomorrow"></span>
+          <img src="" id="conditionImgTomorrow">
+        </p>
+        <p id="temperatureTomorrow"></p>
+        <hr>
+        <p id="humidityTomorrow"></p>
+        <hr>
+        <p id="windTomorrow"></p>
+        <hr> -->
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="locModal" tabindex="-1" role="dialog" aria-labelledby="locModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="locModalLabel">Choose Location</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="w-form">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="modalCity" class="form-control">
+            </div>
+            <!-- <div class="form-group">
+              <label for="state">State</label>
+              <input type="text" id="state" class="form-control">
+            </div> -->
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button id="w-change-btn" type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+  <!-- <script src="bootstrap v.4.1.3/js/bootstrap.min.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
